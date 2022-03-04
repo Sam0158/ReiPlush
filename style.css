@@ -1,0 +1,200 @@
+html {
+  font-size: 1vw; font-family:sans-serif;
+}
+
+body{
+  background-color: #A8C0D8; /*rgb(243, 243, 243);*/
+  color: #222222;
+  font-size: 160%;
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+/*header stuff*/
+.header{
+  padding: 35px 0vw  30px 8vw;
+  display: inline-flex;
+  font-size: 300%;
+  list-style-type: none;
+  height: 100px;
+  position: relative;
+
+  /*width: fit-content;
+  margin: auto;*/
+}
+
+.header h1 {
+  font-size: 30px;
+  color: Black;
+  line-height: 19px;
+  border:5px solid Black;
+  padding: 20px 20px 20px 20px;
+  margin:15px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 5px 5px 0px #304860;
+  background-color: White;
+  transform: translateX(20px);
+}
+
+.header h1:hover
+{
+    color: White;     /*for text new color (not worked)*/
+    background-color: rgb(59, 59, 59);     /*for background new color (it worked)*/
+}
+
+.a{
+  text-decoration:none;
+}
+
+.logo img{
+  width:70px;
+  height:70px;
+  border-radius: 30px;
+  padding: 15px 15px 16px 15px;
+
+  position: relative;
+  top: 50%;
+  background-color: White;
+
+  
+  transform: translateY(-58px);
+  box-shadow: .7vh .7vw 18px #D5E4FE;
+}
+
+
+
+/*main content stuff*/
+.main{
+  /* right side must be 2vh more to account for the shadows*/
+  padding: 0vh 7vw 7vh 8vw;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  /*min-height: calc(100vh - 26vh);*/
+}
+
+.text{
+  width: 100%;
+  height: 100%;
+  position:  relative;
+  flex-grow: 2;
+
+  background-color: White; /*#ccf #D5E4FE*/
+  box-shadow: 2vh 1vw 0px #304860;
+  border:5px solid Black;
+  padding: 2vh 0vw 0vh 2vw;
+  border-radius: 30px;
+}
+.text h1{
+  font-size: 400%;
+  position:  relative;
+  margin: 0;
+  text-shadow: 4px 3px #e9e9e9;
+}
+.text p{
+  margin-block-start: .5em;
+  margin-block-end: .5em;
+
+  font-size: 180%;
+  width:85%;
+  line-height: 120%;
+  margin-left: 3%;
+  font-style: italic;
+}
+
+.main-image img{
+  float: right;
+  border-radius: 30px;
+
+  height: auto;
+  width: 90%; /* ie8 */
+
+  flex-grow: 1;
+
+  border:5px solid Black;
+  box-shadow: 2vh 1vw 0px #304860;
+}
+
+
+/*footer stuff*/
+.footer{
+  background: Black;
+  height: 6.0vh;
+  text-align: center;
+  width: 100%;
+  min-height: 100%;
+  bottom:0;
+  font-size: 2vh;
+  position: relative;
+}
+.footer-content{
+  background: White;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0vh 0vw 1vh 0vw;
+
+}
+.footer h1{
+  margin: 0;
+}
+
+
+
+
+.gallery{
+  /* right side must be 2vh more to account for the shadows*/
+  padding: 0vh 7vw 7vh 8vw;
+  /*min-height: calc(100vh - 26vh);*/
+  width: fit-content;
+  margin: auto;
+  
+
+}
+
+.gallery-text h1{
+  color: Black;
+  line-height: .5vw;
+  border:5px solid Black;
+  padding: 3vh 2vw  3vh 2vw;
+  margin:15px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 200%;
+  list-style-type: none;
+  position: relative;
+  background-color: White;
+  text-align: center;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  box-shadow: 2vh 1vw 0px #304860;
+  
+}
+
+.gallery img{
+  float: inline-start;
+  border-radius: 30px;
+
+  height: auto;
+  width: 27%; /* ie8 */
+
+  flex-grow: 1;
+
+  box-shadow: 2vh 1vw 0px #304860;
+  margin: 2vw;
+}
+
+.gallery img:hover {
+  border:5px solid White;
+  width: 26%;
+  box-shadow: 2.5vh 1.25vw 0px #304860;
+}
